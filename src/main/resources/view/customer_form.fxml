@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="730.0" style="-fx-background-radius: 20px; -fx-background-color: #636e72;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CarHire.controller.CustomerFormController">
+    <children>
+        <TextField fx:id="txtid" layoutX="12.0" layoutY="77.0" onAction="#txtidOnAction" prefHeight="25.0" prefWidth="287.0" promptText="id" style="-fx-background-radius: 15px; -fx-background-color: #636e72; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </TextField>
+        <Label layoutX="279.0" layoutY="14.0" text="Manage Customers" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtname" layoutX="428.0" layoutY="77.0" prefHeight="25.0" prefWidth="287.0" promptText="name" style="-fx-background-radius: 15px; -fx-background-color: #636e72; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="txtaddress" layoutX="16.0" layoutY="122.0" prefHeight="25.0" prefWidth="701.0" promptText="address" style="-fx-background-radius: 15px; -fx-background-color: #636e72; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="txtmobileno" layoutX="428.0" layoutY="167.0" prefHeight="19.0" prefWidth="287.0" promptText="mobile no" style="-fx-background-radius: 15px; -fx-background-color: #636e72; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <TextField fx:id="txtnic" layoutX="14.0" layoutY="167.0" prefHeight="25.0" prefWidth="287.0" promptText="nic" style="-fx-background-radius: 15px; -fx-background-color: #636e72; -fx-text-fill: white;">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></TextField>
+        <Button layoutX="41.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="28.0" prefWidth="106.0" style="-fx-background-radius: 12px; -fx-background-color: black;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Separator layoutX="14.0" layoutY="100.0" prefHeight="3.0" prefWidth="287.0" style="-fx-background-color: white;" />
+        <Separator layoutX="428.0" layoutY="100.0" prefHeight="3.0" prefWidth="287.0" style="-fx-background-color: white;" />
+        <Separator layoutX="16.0" layoutY="190.0" prefHeight="3.0" prefWidth="287.0" style="-fx-background-color: white;" />
+        <Separator layoutX="429.0" layoutY="190.0" prefHeight="3.0" prefWidth="287.0" style="-fx-background-color: white;" />
+        <Separator layoutX="16.0" layoutY="144.0" prefHeight="3.0" prefWidth="701.0" style="-fx-background-color: white;" />
+        <Button layoutX="314.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="28.0" prefWidth="106.0" style="-fx-background-radius: 12px; -fx-background-color: black;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button layoutX="568.0" layoutY="220.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="28.0" prefWidth="106.0" style="-fx-background-radius: 12px; -fx-background-color: black;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <TableView fx:id="tblCustomer" layoutX="14.0" layoutY="279.0" prefHeight="313.0" prefWidth="701.0" style="-fx-background-color: #2d3436;">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="66.66665935516357" text="Id" />
+                <TableColumn fx:id="colName" prefWidth="153.33333587646484" text="Name" />
+                <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="167.33335876464844" text="Address" />
+                <TableColumn fx:id="colMobileNo" minWidth="6.66668701171875" prefWidth="137.99996948242188" text="Mobile No" />
+                <TableColumn fx:id="colNic" prefWidth="176.0" text="NIC" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

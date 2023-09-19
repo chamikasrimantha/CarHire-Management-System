@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="406.0" prefWidth="608.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CarHire.controller.SigninFormController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="244.0" style="-fx-background-color: #34495e;">
+            <children>
+                <ImageView fitHeight="406.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/signin_backgroudimg.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="41.0" layoutY="40.0" text="CarHire Pvt Ltd" textFill="#aa8a8a">
+                    <font>
+                        <Font name="Arial Bold Italic" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="46.0" layoutY="376.0" text="© 2023 CarHire - All Rghts Reserved" textFill="#9f9292">
+                    <font>
+                        <Font size="9.0" />
+                    </font></Label>
+            </children></AnchorPane>
+        <TextField fx:id="txtusername" layoutX="289.0" layoutY="158.0" prefHeight="30.0" prefWidth="269.0" promptText="username" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Separator layoutX="291.0" layoutY="187.0" prefHeight="7.0" prefWidth="269.0" />
+        <Separator layoutX="290.0" layoutY="251.0" prefHeight="7.0" prefWidth="269.0" />
+        <PasswordField fx:id="txtpassword" layoutX="289.0" layoutY="222.0" prefHeight="30.0" prefWidth="269.0" promptText="password" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Button layoutX="361.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnSigninOnAction" prefHeight="30.0" prefWidth="125.0" style="-fx-background-radius: 15px; -fx-background-color: black;" text="Sign In" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label layoutX="388.0" layoutY="94.0" text="SignIn" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="324.0" layoutY="366.0" text="Don't have a account? " textFill="WHITE" />
+        <Label layoutX="453.0" layoutY="366.0" onMouseClicked="#btnRegisterOnMouseClicked" text="Register Here !" textFill="#0372f8">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <ImageView fitHeight="69.0" fitWidth="79.0" layoutX="389.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/user1_icon.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

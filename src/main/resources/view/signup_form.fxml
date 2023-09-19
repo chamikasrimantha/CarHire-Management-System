@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.CarHire.controller.SignupFormController">
+    <children>
+        <ImageView fitHeight="63.0" fitWidth="75.0" layoutX="269.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/icons8-user-48.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="262.0" layoutY="83.0" text="SignUp" textFill="#e6dfdf">
+            <font>
+                <Font name="Arial Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtname" layoutX="14.0" layoutY="130.0" prefHeight="30.0" prefWidth="570.0" promptText="full name" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Separator layoutX="16.0" layoutY="159.0" prefHeight="3.0" prefWidth="564.0" />
+        <TextField fx:id="txtusername" layoutX="15.0" layoutY="188.0" prefHeight="30.0" prefWidth="255.0" promptText="username" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Separator layoutX="17.0" layoutY="217.0" prefHeight="3.0" prefWidth="255.0" />
+        <TextField fx:id="txtemail" layoutX="17.0" layoutY="246.0" prefHeight="30.0" prefWidth="255.0" promptText="email" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Separator layoutX="19.0" layoutY="275.0" prefHeight="3.0" prefWidth="255.0" />
+        <TextField fx:id="txtpassword" layoutX="326.0" layoutY="189.0" prefHeight="30.0" prefWidth="255.0" promptText="password" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Separator layoutX="328.0" layoutY="218.0" prefHeight="3.0" prefWidth="255.0" />
+        <TextField fx:id="txtmobileno" layoutX="328.0" layoutY="247.0" prefHeight="30.0" prefWidth="255.0" promptText="mobile no" style="-fx-background-radius: 15px; -fx-background-color: #34495e; -fx-text-fill: lightgray;" />
+        <Separator layoutX="330.0" layoutY="276.0" prefHeight="3.0" prefWidth="255.0" />
+        <Button layoutX="247.0" layoutY="307.0" mnemonicParsing="false" onAction="#btnSignupOnAction" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: #aea3a3; -fx-background-radius: 15px;" text="Sign Up" textFill="#090909">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Label layoutX="198.0" layoutY="362.0" text="Already have an account?" textFill="WHITE" />
+        <Label layoutX="340.0" layoutY="362.0" onMouseClicked="#btnLoginOnMouseClicked" text="Login here !" textFill="#0372f8">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+    </children>
+</AnchorPane>
